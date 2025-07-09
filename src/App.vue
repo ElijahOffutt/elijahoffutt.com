@@ -2,23 +2,48 @@
   <!-- SVG OVERLAY -->
   <!-- CONTENT -->
   <div id="content_wrap">
-    <v-app>
-      <v-main style="background: transparent !important;"></v-main>
-    </v-app>
+    <!-- <v-app>
+      <v-main>
+        <h1>check</h1>
+        <v-btn variant="elevated" size="x-large" @click="startBounce">test</v-btn>
+      </v-main>
+    </v-app> -->
+    <div id="reference" />
   </div>
   <canvas ref="Background" id="Background" style="height: 100vh; width: 100vw;" />
 </template>
 
 <script setup>
+
+// ┌─┐
+// ││
+// └─┘ 
+
 import { ref, onMounted } from "vue";
 import { createScene } from "./services/background";
-const Background = ref(null);
+let Background = ref(null);
+let background = {};
+let bouncing = ref(false);
 
-onMounted(() => {
+onMounted(async () => {
   if (Background.value) {
-    createScene(Background.value);
+    let { engine, scene, bounce } = await createScene(Background.value);
+    background.engine = engine;
+    background.scene = scene;
+    background.bounceAnimation = bounce;
   }
 });
+
+let startBounce = async () => {
+  let { bounceAnimation } = background;
+  if (bouncing.value) {
+    bounceAnimation.pause();
+    bouncing.value = false;
+  } else {
+    bounceAnimation.play();
+    bouncing.value = true;
+  }
+};
 </script>
 
 <style lang="scss">
@@ -40,7 +65,24 @@ document {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 10;
+  pointer-events: none;
+
+  #reference {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background-color: pink;
+    opacity: 0.25;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("@/assets/concept.webp");
+  }
+
 }
 
 #Background {
