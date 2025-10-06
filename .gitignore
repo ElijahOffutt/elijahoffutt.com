@@ -1,22 +1,56 @@
-.DS_Store
-node_modules
-/dist
+# Node modules
+/node_modules/
 
-# local env files
-.env.local
+# Output / build directories
+/.nuxt/           # Nuxt build output  
+/.output/         # Nuxt 3 output (depending on your setup)  
+/dist/             # static build (if you generate)  
+/.vercel/          # if deploying via Vercel  
+/.cache/           # e.g. cache directories  
+/.turbo/           # if you use Turborepo or similar  
+
+# Environment / secrets
+.env
 .env.*.local
+.env.local
+.env.production
+.env.production.local
 
-# Log files
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+*.log
 
-# Editor directories and files
-.idea
-.vscode
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor / IDE files
+.vscode/
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# TypeScript / build artifacts
+*.tsbuildinfo
+*.js.map
+*.d.ts
+*.map
+
+# Misc
+coverage/
+*.local
+*.tmp
+*.temp
+*.cache
+
+# If you have a “.slicemachine” or similar generated folder (e.g. in Prismic setups)
+.slicemachine/
+
+# Allow exceptions if needed (un-ignore a file):
+# !/some-file-you-want-to-keep
