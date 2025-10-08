@@ -19,11 +19,13 @@
     "@vueuse/nuxt": "^13.9.0",
     "date-fns": "^4.1.0",
     "nuxt": "^4.1.2",
+    "sass-embedded": "^1.93.2",
     "zod": "^4.1.11"
   },
   "devDependencies": {
     "@nuxt/eslint": "^1.9.0",
     "eslint": "^9.37.0",
+    "nuxt-particles": "^0.3.0",
     "typescript": "^5.9.3",
     "vue-tsc": "^3.1.0"
   },

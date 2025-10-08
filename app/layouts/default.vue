@@ -3,5 +3,5 @@
     <UMain>
         <slot />
     </UMain>
-    <PublicFooter />
+    <!-- <PublicFooter /> -->
 </template>

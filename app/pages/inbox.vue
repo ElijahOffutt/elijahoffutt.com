@@ -3,6 +3,12 @@ import { computed, ref, watch } from 'vue'
 import { breakpointsTailwind } from '@vueuse/core'
 import type { Mail } from '~/types'
 
+
+definePageMeta({
+  layout: 'application'
+})
+
+
 const tabItems = [{
   label: 'All',
   value: 'all'
@@ -48,13 +54,7 @@ const isMobile = breakpoints.smaller('lg')
 </script>
 
 <template>
-  <UDashboardPanel
-    id="inbox-1"
-    :default-size="25"
-    :min-size="20"
-    :max-size="30"
-    resizable
-  >
+  <UDashboardPanel id="inbox-1" :default-size="25" :min-size="20" :max-size="30" resizable>
     <UDashboardNavbar title="Inbox">
       <template #leading>
         <UDashboardSidebarCollapse />
@@ -64,12 +64,7 @@ const isMobile = breakpoints.smaller('lg')
       </template>
 
       <template #right>
-        <UTabs
-          v-model="selectedTab"
-          :items="tabItems"
-          :content="false"
-          size="xs"
-        />
+        <UTabs v-model="selectedTab" :items="tabItems" :content="false" size="xs" />
       </template>
     </UDashboardNavbar>
     <InboxList v-model="selectedMail" :mails="filteredMails" />

@@ -3,8 +3,14 @@ export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
     '@nuxt/ui',
-    '@vueuse/nuxt'
+    '@vueuse/nuxt',
+    'nuxt-particles'
   ],
+
+  particles: {
+    mode: 'full', // 'full' | 'slim' | 'basic' | 'custom'    lazy: true  }
+    lazy: true,
+  },
 
   devtools: {
     enabled: true
