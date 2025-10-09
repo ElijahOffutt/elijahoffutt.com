@@ -1,0 +1,1 @@
+import{aM as o,T as t,aN as r,r as u,l as n}from"#entry";import{d as c}from"./BF9scSqw.js";const h=()=>{const a=t(),s=r(),e=u(!1);return c({"g-h":()=>s.push("/"),"g-i":()=>s.push("/inbox"),"g-c":()=>s.push("/customers"),"g-s":()=>s.push("/settings"),n:()=>e.value=!e.value}),n(()=>a.fullPath,()=>{e.value=!1}),{isNotificationsSlideoverOpen:e}},p=o(h);export{p as u};
