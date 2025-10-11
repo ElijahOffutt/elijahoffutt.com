@@ -2,6 +2,10 @@
 export default defineNuxtConfig({
   ssr: false,
 
+  nitro: {
+    preset: 'cloudflare-pages'
+  },
+
   modules: [
     '@nuxt/eslint',
     '@nuxt/ui',
