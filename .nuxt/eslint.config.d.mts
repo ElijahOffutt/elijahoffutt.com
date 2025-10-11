@@ -1,6 +1,6 @@
-import type { FlatConfigComposer } from "../node_modules/eslint-flat-config-utils/dist/index.mjs"
-import { defineFlatConfigs } from "../node_modules/@nuxt/eslint-config/dist/flat.mjs"
-import type { NuxtESLintConfigOptionsResolved } from "../node_modules/@nuxt/eslint-config/dist/flat.mjs"
+import type { FlatConfigComposer } from "../node_modules/.pnpm/eslint-flat-config-utils@2.1.4/node_modules/eslint-flat-config-utils/dist/index.mjs"
+import { defineFlatConfigs } from "../node_modules/.pnpm/@nuxt+eslint-config@1.9.0_@_4a92816c80d2a7dc9fdad20cbb6b98aa/node_modules/@nuxt/eslint-config/dist/flat.mjs"
+import type { NuxtESLintConfigOptionsResolved } from "../node_modules/.pnpm/@nuxt+eslint-config@1.9.0_@_4a92816c80d2a7dc9fdad20cbb6b98aa/node_modules/@nuxt/eslint-config/dist/flat.mjs"
 
 declare const configs: FlatConfigComposer
 declare const options: NuxtESLintConfigOptionsResolved
