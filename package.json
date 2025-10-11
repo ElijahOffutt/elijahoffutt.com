@@ -26,6 +26,7 @@
     "@nuxt/eslint": "^1.9.0",
     "eslint": "^9.37.0",
     "nuxt-particles": "^0.3.0",
+    "tailwindcss": "^4.1.14",
     "typescript": "^5.9.3",
     "vue-tsc": "^3.1.0"
   },
