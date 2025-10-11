@@ -7,7 +7,10 @@
             <div class="w-8/12">
                 <h2 class="text-4xl text-center mb-6 text-white drop-shadow">What I bring to Collaborating Docs
                 </h2>
-                <video controls src="/vcl.mp4" />
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/X52WjOuNG1A?si=5JqVSZAf0Zw4tvVS"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
         </section>
