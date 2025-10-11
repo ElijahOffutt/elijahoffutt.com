@@ -2,58 +2,58 @@
   "compilerOptions": {
     "paths": {
       "nitropack/types": [
-        "../node_modules/nitropack/types"
+        "../node_modules/.pnpm/nitropack@2.12.6/node_modules/nitropack/types"
       ],
       "nitropack/runtime": [
-        "../node_modules/nitropack/runtime"
+        "../node_modules/.pnpm/nitropack@2.12.6/node_modules/nitropack/runtime"
       ],
       "nitropack": [
-        "../node_modules/nitropack"
+        "../node_modules/.pnpm/nitropack@2.12.6/node_modules/nitropack"
       ],
       "defu": [
-        "../node_modules/defu"
+        "../node_modules/.pnpm/defu@6.1.4/node_modules/defu"
       ],
       "h3": [
-        "../node_modules/h3"
+        "../node_modules/.pnpm/h3@1.15.4/node_modules/h3"
       ],
       "consola": [
-        "../node_modules/consola"
+        "../node_modules/.pnpm/consola@3.4.2/node_modules/consola"
       ],
       "ofetch": [
-        "../node_modules/ofetch"
+        "../node_modules/.pnpm/ofetch@1.4.1/node_modules/ofetch"
       ],
       "@unhead/vue": [
-        "../node_modules/@unhead/vue"
+        "../node_modules/.pnpm/@unhead+vue@2.0.17_vue@3.5.22_typescript@5.9.3_/node_modules/@unhead/vue"
       ],
       "@nuxt/devtools": [
-        "../node_modules/@nuxt/devtools"
+        "../node_modules/.pnpm/@nuxt+devtools@2.6.5_vite@7_6a87b227f12ec54851119fd3a61def89/node_modules/@nuxt/devtools"
       ],
       "vue": [
-        "../node_modules/vue"
+        "../node_modules/.pnpm/vue@3.5.22_typescript@5.9.3/node_modules/vue"
       ],
       "@vue/runtime-core": [
-        "../node_modules/@vue/runtime-core"
+        "../node_modules/.pnpm/@vue+runtime-core@3.5.22/node_modules/@vue/runtime-core"
       ],
       "@vue/compiler-sfc": [
-        "../node_modules/@vue/compiler-sfc"
+        "../node_modules/.pnpm/@vue+compiler-sfc@3.5.22/node_modules/@vue/compiler-sfc"
       ],
       "vue-router": [
-        "../node_modules/vue-router"
+        "../node_modules/.pnpm/vue-router@4.5.1_vue@3.5.22_typescript@5.9.3_/node_modules/vue-router"
       ],
       "vue-router/auto-routes": [
-        "../node_modules/vue-router/vue-router-auto-routes"
+        "../node_modules/.pnpm/vue-router@4.5.1_vue@3.5.22_typescript@5.9.3_/node_modules/vue-router/vue-router-auto-routes"
       ],
       "unplugin-vue-router/client": [
-        "../node_modules/unplugin-vue-router/client"
+        "../node_modules/.pnpm/unplugin-vue-router@0.15.0__b6975fbbc5c03ebc080ab9b9bd85fe94/node_modules/unplugin-vue-router/client"
       ],
       "@nuxt/schema": [
-        "../node_modules/@nuxt/schema"
+        "../node_modules/.pnpm/@nuxt+schema@4.1.2/node_modules/@nuxt/schema"
       ],
       "nuxt": [
         "../node_modules/.pnpm/nuxt@4.1.2_@parcel+watcher@_711ded5c0b0a777b943ae0cc30596ebb/node_modules/nuxt"
       ],
       "vite/client": [
-        "../node_modules/vite/client"
+        "../node_modules/.pnpm/vite@7.1.9_jiti@2.6.1_light_672e9cd43d6dd86d00c9d082ceaf442d/node_modules/vite/client"
       ],
       "~": [
         "../app"
@@ -104,7 +104,7 @@
         "./color-mode-options.mjs"
       ],
       "#vue-router": [
-        "../node_modules/vue-router"
+        "../node_modules/.pnpm/vue-router@4.5.1_vue@3.5.22_typescript@5.9.3_/node_modules/vue-router"
       ],
       "#unhead/composables": [
         "../node_modules/.pnpm/nuxt@4.1.2_@parcel+watcher@_711ded5c0b0a777b943ae0cc30596ebb/node_modules/nuxt/dist/head/runtime/composables"
@@ -113,7 +113,7 @@
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/cd60bef2-e687-4ac3-a70c-54f169d259d2"
+        "./manifest/meta/e1641d1b-69aa-43fa-96e9-2998924e3ef6"
       ],
       "#build": [
         "."
