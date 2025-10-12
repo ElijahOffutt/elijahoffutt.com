@@ -19,7 +19,7 @@ useHead({
 })
 
 const title = 'Collaborating Docs Demo'
-const description = 'A professional dashboard template built with Nuxt UI, featuring multiple pages, data visualization, and comprehensive management capabilities for creating powerful admin interfaces.'
+const description = 'A demo for Collaborating Docs'
 
 useSeoMeta({
   title,
