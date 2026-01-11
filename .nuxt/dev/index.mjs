@@ -3,42 +3,42 @@ import { Server } from 'node:http';
 import { resolve, dirname, join } from 'node:path';
 import nodeCrypto from 'node:crypto';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getResponseStatus, getQuery as getQuery$1, readBody, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, getResponseStatusText } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/h3@1.15.4/node_modules/h3/dist/index.mjs';
-import { escapeHtml } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/@vue+shared@3.5.22/node_modules/@vue/shared/dist/shared.cjs.js';
-import { sub } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/date-fns@4.1.0/node_modules/date-fns/index.js';
-import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/vue-bundle-renderer@2.2.0/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/ufo@1.6.1/node_modules/ufo/dist/index.mjs';
-import destr, { destr as destr$1 } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/destr@2.0.5/node_modules/destr/dist/index.mjs';
-import { renderToString } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/vue@3.5.22_typescript@5.9.3/node_modules/vue/server-renderer/index.mjs';
-import { klona } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/klona@2.0.6/node_modules/klona/dist/index.mjs';
-import defu, { defuFn } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/defu@6.1.4/node_modules/defu/dist/defu.mjs';
-import { snakeCase } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/scule@1.3.0/node_modules/scule/dist/index.mjs';
-import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/unhead@2.0.17/node_modules/unhead/dist/server.mjs';
-import { stringify, uneval } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/devalue@5.3.2/node_modules/devalue/index.js';
-import { isVNode, toValue, isRef } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/vue@3.5.22_typescript@5.9.3/node_modules/vue/index.mjs';
-import { createHooks } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/hookable@5.5.3/node_modules/hookable/dist/index.mjs';
-import { createFetch, Headers as Headers$1 } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/ofetch@1.4.1/node_modules/ofetch/dist/node.mjs';
-import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/node-mock-http@1.0.3/node_modules/node-mock-http/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/unstorage@1.17.1_db0@0.3.4_ioredis@5.8.0/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/unstorage@1.17.1_db0@0.3.4_ioredis@5.8.0/node_modules/unstorage/drivers/fs.mjs';
-import { digest, hash as hash$1 } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/ohash@2.0.11/node_modules/ohash/dist/index.mjs';
-import { toRouteMatcher, createRouter } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/radix3@1.1.2/node_modules/radix3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, createEvent, fetchWithEvent, isEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, setResponseHeaders, setResponseStatus, send, getRequestHeaders, setResponseHeader, appendResponseHeader, getRequestURL, getResponseHeader, removeResponseHeader, createError, getResponseStatus, getQuery as getQuery$1, readBody, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, getResponseStatusText } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/h3@1.15.4/node_modules/h3/dist/index.mjs';
+import { escapeHtml } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/@vue+shared@3.5.22/node_modules/@vue/shared/dist/shared.cjs.js';
+import { sub } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/date-fns@4.1.0/node_modules/date-fns/index.js';
+import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/vue-bundle-renderer@2.2.0/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, decodePath, withLeadingSlash, withoutTrailingSlash, joinRelativeURL } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/ufo@1.6.1/node_modules/ufo/dist/index.mjs';
+import destr, { destr as destr$1 } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/destr@2.0.5/node_modules/destr/dist/index.mjs';
+import { renderToString } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/vue@3.5.22_typescript@5.9.3/node_modules/vue/server-renderer/index.mjs';
+import { klona } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/klona@2.0.6/node_modules/klona/dist/index.mjs';
+import defu, { defuFn } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/defu@6.1.4/node_modules/defu/dist/defu.mjs';
+import { snakeCase } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/scule@1.3.0/node_modules/scule/dist/index.mjs';
+import { createHead as createHead$1, propsToString, renderSSRHead } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/unhead@2.0.17/node_modules/unhead/dist/server.mjs';
+import { stringify, uneval } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/devalue@5.3.2/node_modules/devalue/index.js';
+import { isVNode, toValue, isRef } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/vue@3.5.22_typescript@5.9.3/node_modules/vue/index.mjs';
+import { createHooks } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/hookable@5.5.3/node_modules/hookable/dist/index.mjs';
+import { createFetch, Headers as Headers$1 } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/ofetch@1.4.1/node_modules/ofetch/dist/node.mjs';
+import { fetchNodeRequestHandler, callNodeRequestHandler } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/node-mock-http@1.0.3/node_modules/node-mock-http/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/unstorage@1.17.1_db0@0.3.4_ioredis@5.8.0/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/unstorage@1.17.1_db0@0.3.4_ioredis@5.8.0/node_modules/unstorage/drivers/fs.mjs';
+import { digest, hash as hash$1 } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/ohash@2.0.11/node_modules/ohash/dist/index.mjs';
+import { toRouteMatcher, createRouter } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/radix3@1.1.2/node_modules/radix3/dist/index.mjs';
 import { readFile } from 'node:fs/promises';
-import consola, { consola as consola$1 } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/consola@3.4.2/node_modules/consola/dist/index.mjs';
-import { ErrorParser } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/youch-core@0.3.3/node_modules/youch-core/build/index.js';
-import { Youch } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/youch@4.1.0-beta.11/node_modules/youch/build/index.js';
-import { SourceMapConsumer } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/source-map@0.7.6/node_modules/source-map/source-map.js';
+import consola, { consola as consola$1 } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/consola@3.4.2/node_modules/consola/dist/index.mjs';
+import { ErrorParser } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/youch-core@0.3.3/node_modules/youch-core/build/index.js';
+import { Youch } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/youch@4.1.0-beta.11/node_modules/youch/build/index.js';
+import { SourceMapConsumer } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/source-map@0.7.6/node_modules/source-map/source-map.js';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { getContext } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/unctx@2.4.1/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/errx@0.1.0/node_modules/errx/dist/index.js';
+import { getContext } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/unctx@2.4.1/node_modules/unctx/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/errx@0.1.0/node_modules/errx/dist/index.js';
 import { promises } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { dirname as dirname$1, resolve as resolve$1, basename } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/pathe@2.0.3/node_modules/pathe/dist/index.mjs';
-import { getIcons } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/@iconify+utils@3.0.2/node_modules/@iconify/utils/lib/index.js';
-import { collections } from 'file://D:/dev/elijahoffutt.com/.nuxt/nuxt-icon-server-bundle.mjs';
-import { walkResolver } from 'file://D:/dev/elijahoffutt.com/node_modules/.pnpm/unhead@2.0.17/node_modules/unhead/dist/utils.mjs';
+import { dirname as dirname$1, resolve as resolve$1, basename } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/pathe@2.0.3/node_modules/pathe/dist/index.mjs';
+import { getIcons } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/@iconify+utils@3.0.2/node_modules/@iconify/utils/lib/index.js';
+import { collections } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/.nuxt/nuxt-icon-server-bundle.mjs';
+import { walkResolver } from 'file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/node_modules/.pnpm/unhead@2.0.17/node_modules/unhead/dist/utils.mjs';
 
-const serverAssets = [{"baseName":"server","dir":"D:/dev/elijahoffutt.com/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"C:/Users/Einze/Desktop/Software/elijahoffutt.com/server/assets"}];
 
 const assets$1 = createStorage();
 
@@ -50,11 +50,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets$1);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:/dev/elijahoffutt.com","watchOptions":{"ignored":[null]}}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:/dev/elijahoffutt.com/server","watchOptions":{"ignored":[null]}}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:/dev/elijahoffutt.com/.nuxt"}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:/dev/elijahoffutt.com/.nuxt/cache"}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"D:/dev/elijahoffutt.com/.data/kv"}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Users/Einze/Desktop/Software/elijahoffutt.com","watchOptions":{"ignored":[null]}}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:/Users/Einze/Desktop/Software/elijahoffutt.com/server","watchOptions":{"ignored":[null]}}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Users/Einze/Desktop/Software/elijahoffutt.com/.nuxt"}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:/Users/Einze/Desktop/Software/elijahoffutt.com/.nuxt/cache"}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"C:/Users/Einze/Desktop/Software/elijahoffutt.com/.data/kv"}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -1288,13 +1288,13 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _2bUjI9tFVXUzWtCZlJoUdZ01Dk9zShhE82mMsutN9fw = (function(nitro) {
+const _1WuPbq07amgN3upjg_68qCNcAmyFXhyUwnUyZuIzink = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script$1}<\/script>`);
   });
 });
 
-const rootDir = "D:/dev/elijahoffutt.com";
+const rootDir = "C:/Users/Einze/Desktop/Software/elijahoffutt.com";
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
 
@@ -1317,7 +1317,7 @@ const devReducers = {
   URL: (data) => data instanceof URL ? data.toString() : void 0
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _h0w_KGYDHBzWqmij_vHHng_cmmx46vMn_C2Ta7ZNq50 = (nitroApp) => {
+const _0Kyu1gVJ6JmtoRZZqZ3oAU5KzYu5zmFXPzfLKkBLqPs = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -1388,16 +1388,16 @@ function onConsoleLog(callback) {
 
 const script = "\"use strict\";(()=>{const t=window,e=document.documentElement,c=[\"dark\",\"light\"],n=getStorageValue(\"localStorage\",\"nuxt-color-mode\")||\"system\";let i=n===\"system\"?u():n;const r=e.getAttribute(\"data-color-mode-forced\");r&&(i=r),l(i),t[\"__NUXT_COLOR_MODE__\"]={preference:n,value:i,getColorScheme:u,addColorScheme:l,removeColorScheme:d};function l(o){const s=\"\"+o+\"\",a=\"\";e.classList?e.classList.add(s):e.className+=\" \"+s,a&&e.setAttribute(\"data-\"+a,o)}function d(o){const s=\"\"+o+\"\",a=\"\";e.classList?e.classList.remove(s):e.className=e.className.replace(new RegExp(s,\"g\"),\"\"),a&&e.removeAttribute(\"data-\"+a)}function f(o){return t.matchMedia(\"(prefers-color-scheme\"+o+\")\")}function u(){if(t.matchMedia&&f(\"\").media!==\"not all\"){for(const o of c)if(f(\":\"+o).matches)return o}return\"light\"}})();function getStorageValue(t,e){switch(t){case\"localStorage\":return window.localStorage.getItem(e);case\"sessionStorage\":return window.sessionStorage.getItem(e);case\"cookie\":return getCookie(e);default:return null}}function getCookie(t){const c=(\"; \"+window.document.cookie).split(\"; \"+t+\"=\");if(c.length===2)return c.pop()?.split(\";\").shift()}";
 
-const _bEhKwfTsUHOdO9xeCKGhYLaOjrMOM7cWvrf6b7ikToE = (function(nitro) {
+const _hma4sU3WZClnvzzuUeRcBwktoPi_Grp997C1599Pf6Q = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
 const plugins = [
-  _2bUjI9tFVXUzWtCZlJoUdZ01Dk9zShhE82mMsutN9fw,
-_h0w_KGYDHBzWqmij_vHHng_cmmx46vMn_C2Ta7ZNq50,
-_bEhKwfTsUHOdO9xeCKGhYLaOjrMOM7cWvrf6b7ikToE
+  _1WuPbq07amgN3upjg_68qCNcAmyFXhyUwnUyZuIzink,
+_0Kyu1gVJ6JmtoRZZqZ3oAU5KzYu5zmFXPzfLKkBLqPs,
+_hma4sU3WZClnvzzuUeRcBwktoPi_Grp997C1599Pf6Q
 ];
 
 const assets = {};
@@ -1425,7 +1425,7 @@ function getAsset (id) {
 
 const METHODS = /* @__PURE__ */ new Set(["HEAD", "GET"]);
 const EncodingMap = { gzip: ".gz", br: ".br" };
-const _YHTn6g = eventHandler((event) => {
+const _WWnJkN = eventHandler((event) => {
   if (event.method && !METHODS.has(event.method)) {
     return;
   }
@@ -1579,7 +1579,7 @@ function publicAssetsURL(...path) {
 
 const warnOnceSet = /* @__PURE__ */ new Set();
 const DEFAULT_ENDPOINT = "https://api.iconify.design";
-const _OJEfcE = defineCachedEventHandler(async (event) => {
+const _K1oUGx = defineCachedEventHandler(async (event) => {
   const url = getRequestURL(event);
   if (!url)
     return createError({ status: 400, message: "Invalid icon request" });
@@ -1695,7 +1695,7 @@ function setSSRError(ssrContext, error) {
 const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
 const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;
 const getServerEntry = () => Promise.resolve().then(function () { return server$1; }).then((r) => r.default || r);
-const getClientManifest = () => import('file://D:/dev/elijahoffutt.com/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getClientManifest = () => import('file://C:/Users/Einze/Desktop/Software/elijahoffutt.com/.nuxt//dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {
@@ -1943,23 +1943,23 @@ async function getIslandContext(event) {
   return ctx;
 }
 
-const _lazy_7rDUFG = () => Promise.resolve().then(function () { return customers$2; });
-const _lazy_GEtW5M = () => Promise.resolve().then(function () { return mails$2; });
-const _lazy_jMC78Z = () => Promise.resolve().then(function () { return members$2; });
-const _lazy_U_Y8rd = () => Promise.resolve().then(function () { return notifications$2; });
-const _lazy_flhOEg = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_z6M82j = () => Promise.resolve().then(function () { return customers$2; });
+const _lazy_QiZOvj = () => Promise.resolve().then(function () { return mails$2; });
+const _lazy_u88fT9 = () => Promise.resolve().then(function () { return members$2; });
+const _lazy_HgR0be = () => Promise.resolve().then(function () { return notifications$2; });
+const _lazy_mqIXGg = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '', handler: _YHTn6g, lazy: false, middleware: true, method: undefined },
-  { route: '/api/customers', handler: _lazy_7rDUFG, lazy: true, middleware: false, method: undefined },
-  { route: '/api/mails', handler: _lazy_GEtW5M, lazy: true, middleware: false, method: undefined },
-  { route: '/api/members', handler: _lazy_jMC78Z, lazy: true, middleware: false, method: undefined },
-  { route: '/api/notifications', handler: _lazy_U_Y8rd, lazy: true, middleware: false, method: undefined },
-  { route: '/__nuxt_error', handler: _lazy_flhOEg, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_nuxt_icon/:collection', handler: _OJEfcE, lazy: false, middleware: false, method: undefined },
+  { route: '', handler: _WWnJkN, lazy: false, middleware: true, method: undefined },
+  { route: '/api/customers', handler: _lazy_z6M82j, lazy: true, middleware: false, method: undefined },
+  { route: '/api/mails', handler: _lazy_QiZOvj, lazy: true, middleware: false, method: undefined },
+  { route: '/api/members', handler: _lazy_u88fT9, lazy: true, middleware: false, method: undefined },
+  { route: '/api/notifications', handler: _lazy_HgR0be, lazy: true, middleware: false, method: undefined },
+  { route: '/__nuxt_error', handler: _lazy_mqIXGg, lazy: true, middleware: false, method: undefined },
+  { route: '/api/_nuxt_icon/:collection', handler: _K1oUGx, lazy: false, middleware: false, method: undefined },
   { route: '/__nuxt_island/**', handler: _SxA8c9, lazy: false, middleware: false, method: undefined },
-  { route: '/_fonts/**', handler: _lazy_flhOEg, lazy: true, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_flhOEg, lazy: true, middleware: false, method: undefined }
+  { route: '/_fonts/**', handler: _lazy_mqIXGg, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_mqIXGg, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
